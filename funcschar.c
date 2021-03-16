@@ -7,10 +7,10 @@
 */
 void chr_print(va_list args, int *ptr_chr)
 {
-	char *a = va_arg(args, char *);
+	char a = va_arg(args, int);
 
 	_putchar(a);
-	*ptr_chr += 1;
+	*(ptr_chr) = *ptr_chr + 1;
 }
 
 /**
@@ -31,7 +31,7 @@ void str_print(va_list args, int *ptr_chr)
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
-		*ptr_chr += 1;
+		*(ptr_chr) = *ptr_chr + 1;
 		i++;
 	}
 }

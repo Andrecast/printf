@@ -16,7 +16,7 @@ int helper_printf(const char *format, struct_form struct_func[], va_list args)
 	ptr = &acum_total;
 
 	i = 0;
-	while(format[i] != '\0' && format)
+	while (format[i] != '\0' && format)
 	{
 		if (format[i] != '%' && format[i] != '\0')
 		{
@@ -33,7 +33,7 @@ int helper_printf(const char *format, struct_form struct_func[], va_list args)
 			acum_total++;
 		}
 		j = 0;
-		while(struct_func[j].option != NULL)
+		while (struct_func[j].option != NULL)
 		{
 			if (format[i] == struct_func[j].option[0])
 			{
