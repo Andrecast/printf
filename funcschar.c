@@ -1,24 +1,25 @@
 #include "holberton.h"
-#include <unistd.h>
 /**
 *chr_print - Function that prints a char
 *@args: Argument pointer variable of type va_list
-*Return: a
+*@ptr_chr: Pointer that keep the number of character to be printed
+*Return: Function type void no return
 */
-int chr_print(va_list args)
+void chr_print(va_list args, int *ptr_chr)
 {
-	int a = va_arg(args, int);
+	char *a = va_arg(args, char *);
 
 	_putchar(a);
-	return (1);
+	*ptr_chr += 1;
 }
 
 /**
 *str_print - Function that prints a character
 *@args: Argument pointer variable of type va_list
-*Return: i
+*@ptr_chr: Pointer that keep the number of character to be printed
+*Return: Function type void no return
 */
-int str_print(va_list args)
+void str_print(va_list args, int *ptr_chr)
 {
 	int i = 0;
 	char *str = va_arg(args, char *);
@@ -30,7 +31,7 @@ int str_print(va_list args)
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
+		*ptr_chr += 1;
 		i++;
 	}
-	return (i);
 }
