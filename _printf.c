@@ -2,8 +2,9 @@
 #include <unistd.h>
 #include <stdio.h>
 #include "holberton.h"
+
 /**
-*
+*_printf - 
 *
 *
 */
@@ -17,36 +18,11 @@ int _printf(const char *format, ...)
         {NULL, NULL}
     };
     
-    int i, j;
     va_list args;
     va_start(args, format);
+    int helper;
 
-    i = 0;
-    while(format[i] != '\0' && format)
-    {
-        if (format[i] != '%' && format[i] != '\0')
-        {
-            _putchar(format[i]);
-            i++;
-        }
-        if (format[i] == '\0')
-            break;
-        i++;
-        if (format[i] == '%')
-        {
-            _putchar(format[i]);
-        }
-        j = 0;
-        while(struct_func[j].option != NULL)
-        {
-            if (format[i] == struct_func[j].option[0])
-            {
-                struct_func[j].func(args);
-            }
-            j++;
-        }
-        i++;
-    }
+    helper = helper_printf(format, struct_func, args);
     va_end(args);
-    return (i);
+    return (helper);
 }
