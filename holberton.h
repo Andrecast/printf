@@ -4,7 +4,6 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-
 /*
 *struct_form - Structure of format
 *@option: Format specifiers
@@ -18,8 +17,8 @@ typedef struct{
 int _putchar(char c);
 int _printf(const char *format, ...);
 int helper_printf(const char *format, struct_form *, va_list args);
-int chr_print(va_list args);
-int str_print(va_list args);
+void chr_print(va_list args);
+void str_print(va_list args);
 int int_print(va_list args);
 
 #endif /* HEADER_H */
