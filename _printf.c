@@ -18,6 +18,8 @@ int _printf(const char *format, ...)
 	int helper;
 	int i;
 
+	i = 0;
+
 	va_start(args, format);
 	if (format[i] == '\0')
 		return (-1);  /* check for return not sucessfully */
