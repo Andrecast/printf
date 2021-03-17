@@ -18,7 +18,7 @@ int helper_printf(const char *format, struct_form struct_func[], va_list args)
 	i = 0;
 	while (format[i] != '\0' && format)
 	{
-		if (format[i] != '%' && format[i] != '\0')
+		while (format[i] != '%' && format[i] != '\0')
 		{
 			_putchar(format[i]);
 			acum_total++;
