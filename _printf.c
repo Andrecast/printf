@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 	int helper;
 
 	va_start(args, format);
-	if (format == NULL &&)
+	if (format == NULL)
 		return (-1);  /* check for return not sucessfully */
 	helper = helper_printf(format, struct_func, args);
 	va_end(args);
