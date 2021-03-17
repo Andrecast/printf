@@ -1,4 +1,4 @@
-.TH _PRINTF version 1.0 "16 March 2021" "man page of _printf"
+.TH _PRINTF version 1.0 "17 March 2021" "man page of _printf"
 .SH NAME
 _printf \- as the original function, formatted output conversion
 
@@ -14,7 +14,34 @@ _printf \- as the original function, formatted output conversion
 The \fB_printf\fR function, produces an output according to the format specifier that is placed on it (see in \fBUSE\fR). Our \fB_printf\fR function that we have created (as a recreation of the original printf function), receives the \fIformat\fR argument as a string and writes the output to stdout according to the arguments that follow it.
 
 .SH USE
+.B "%c"
+Print the ASCII character
+.B "%s"
+Print an text string. A pointer to the char array is expected to print all the characters of that array without including the null byte.
+.B "%d" and "%i"
+If you pass int arguments, it converts them to signed decimals.
 
+.SH EXAMPLE
+int main(void)
+{
+    int l;
+    
+    l = _printf("C is fun!\n");
 
+    _printf("Length:[%d, %i]\n", l, l);
+
+    return (0);
+}
 
 .SH RETURN VALUE
+If the successful, returns the number of characters printed (not counting the null byte).
+If not, it returns (-1).
+If the string is NULL, prints (null), as in the original \fBprintf\fR function.
+
+.SH SEE ALSO
+.I printf(3)
+
+.SH AUTHORS
+Andrea Castrillon
+Diana Parra
+\fBStudents of Holberton School\fR
