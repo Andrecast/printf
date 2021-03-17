@@ -26,7 +26,7 @@ void str_print(va_list args, int *ptr_chr)
 
 	if (str == NULL)
 	{
-		str = "(nil)";
+		str = "(null)";
 	}
 	while (str[i] != '\0')
 	{
