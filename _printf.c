@@ -16,12 +16,9 @@ int _printf(const char *format, ...)
 	};
 	va_list args;
 	int helper;
-	int i;
-
-	i = 0;
 
 	va_start(args, format);
-	if (format[i] == '\0')
+	if (format == '\0')
 		return (-1);  /* check for return not sucessfully */
 	helper = helper_printf(format, struct_func, args);
 	va_end(args);
