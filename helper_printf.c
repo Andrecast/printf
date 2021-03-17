@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  *helper_printf - Function that shows the lenght of format
  *@format: string that contains all the message
@@ -9,9 +8,7 @@
  */
 int helper_printf(const char *format, s_form struct_func[], va_list args)
 {
-	int i = 0, j;
-	int *ptr;
-	int acum_total = 0;
+	int i = 0, j, *ptr, acum_total = 0;
 
 	if (format[i] == '%' && format[i + 1] == '\0')
 		return (-1);
@@ -38,8 +35,15 @@ int helper_printf(const char *format, s_form struct_func[], va_list args)
 			if (format[i] == struct_func[j].option[0])
 			{
 				struct_func[j].func(args, ptr);
+				break;
 			}
 			j++;
+		}
+		if (struct_func[j].option == NULL && format[i] != '%')
+		{
+			_putchar('%');
+			_putchar(format[i]);
+			acum_total += 2;
 		}
 		i++;
 	}
