@@ -17,9 +17,8 @@ Returns: the number of characters printed (excluding the null byte used to end o
 ### Format Specifiers
 | Function Specifier | Function name |
 |--|--|
-| %c | print_char() |
-| %s | print_string() |
-| %% | print_percen() |
+| %c | chr_print() |
+| %s | str_print() |
 
 ## %c 
 is about being able to print the individual characters that were passed as a parameter to the function.
@@ -46,15 +45,15 @@ is about being able to print the the char % because being the indefinifier of pr
 ### Format Specifiers
 | Function Specifier | Function name |
 |--|--|
-| %d | print_d() |
-| %i | print_i() |
+| %d | int_print() |
+| %i | int_print() |
 
 ## %d
 With this option it is able to print the integers that can be handled in the variable
 
 ### Example Usage
 
--   `_printf("%d", 808)`  _prints 808_
+-   `_printf("%d", -8087654)`  _prints -8087654_
 
 ## %i
 With this option it is able to print the integers that can be handled in the variable
