@@ -70,8 +70,11 @@ With this option it is able to print the integers that can be handled in the var
 ## Flowcharts
 
 - Printf flowchart
-https://app.diagrams.net/#G1hTc2UefJ6vC0fjqGmLy5DBt1ys1bKdiA
--funcschar and funcsint
+https://drive.google.com/file/d/1hTc2UefJ6vC0fjqGmLy5DBt1ys1bKdiA/view?usp=sharing
+-funcschar
+https://drive.google.com/file/d/1a0O1rJuDjXpFQs3lKesEp8lk4nJzg4FJ/view?usp=sharing
+-funcsint
+https://drive.google.com/file/d/1MARtvRm8bNFNrIgj7DJ-N1e0BPyfDlqK/view?usp=sharing
 
 ### About
 
