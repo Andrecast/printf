@@ -56,4 +56,3 @@ void int_print(va_list args, int *ptr_chr)
 	recur_print_int(num_user);
 	*(ptr_chr) = *ptr_chr + acum;
 }
-
