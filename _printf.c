@@ -12,13 +12,14 @@ int _printf(const char *format, ...)
 		{"s", str_print},
 		{"d", int_print},
 		{"i", int_print},
+		{"1", percent_print},
 		{NULL, NULL}
 	};
 	va_list args;
 	int helper;
 
 	va_start(args, format);
-	if (format == NULL)
+	if (format == NULL &&)
 		return (-1);  /* check for return not sucessfully */
 	helper = helper_printf(format, struct_func, args);
 	va_end(args);

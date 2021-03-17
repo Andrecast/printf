@@ -35,3 +35,11 @@ void str_print(va_list args, int *ptr_chr)
 		i++;
 	}
 }
+/**
+*percent_print - Function that prints a % character
+*Return: Function type void no return
+*/
+void percent_print(void)
+{
+	_putchar('%');
+}

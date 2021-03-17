@@ -25,5 +25,6 @@ int helper_printf(const char *format, s_form struct_func[], va_list args);
 void chr_print(va_list args, int *ptr_chr);
 void str_print(va_list args, int *ptr_chr);
 void int_print(va_list args, int *ptr_chr);
+void percent_print(void);
 
 #endif /* HEADER_H */

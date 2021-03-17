@@ -9,13 +9,13 @@
  */
 int helper_printf(const char *format, s_form struct_func[], va_list args)
 {
-	int i, j;
+	int i = 0, j;
 	int *ptr;
 	int acum_total = 0;
 
+	if (format[i] == '%' && format[i + 1] == '\0')
+		return (-1);
 	ptr = &acum_total;
-
-	i = 0;
 	while (format[i] != '\0' && format)
 	{
 		while (format[i] != '%' && format[i] != '\0')
