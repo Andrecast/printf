@@ -7,7 +7,7 @@
 */
 int _printf(const char *format, ...)
 {
-	struct_form struct_func[] = {
+	s_form struct_func[] = {
 		{"c", chr_print},
 		{"s", str_print},
 		{"d", int_print},
@@ -15,11 +15,9 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 	va_list args;
-
-	va_start(args, format);
-
 	int helper;
 
+	va_start(args, format);
 	helper = helper_printf(format, struct_func, args);
 	va_end(args);
 	return (helper);

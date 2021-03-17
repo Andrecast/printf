@@ -7,7 +7,7 @@
  *@args: contains the variadic function arguments
  *Return: return the total of characters to be printed
  */
-int helper_printf(const char *format, struct_form struct_func[], va_list args)
+int helper_printf(const char *format, s_form struct_func[], va_list args)
 {
 	int i, j;
 	int *ptr;
