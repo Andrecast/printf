@@ -19,6 +19,7 @@ Returns: the number of characters printed (excluding the null byte used to end o
 |--|--|
 | %c | chr_print() |
 | %s | str_print() |
+| %% | percent_print() |
 
 ## %c 
 is about being able to print the individual characters that were passed as a parameter to the function.
@@ -78,3 +79,10 @@ https://drive.google.com/file/d/1MARtvRm8bNFNrIgj7DJ-N1e0BPyfDlqK/view?usp=shari
 ### About
 
 Created on  `Ubuntu 14.04 LTS`. Compiled with  `gcc 4.8.4`, using flags:  `-Wall -Werror -Wextra and -pedantic`
+
+### Authors :blossom:
+Andrea Castrillón [GitHub_Andrecast](https://github.com/Andrecast)
+Diana Parra [GitHub_dianaparr](https://github.com/dianaparr)
+
+**Project to:**
+![](https://www.holbertonschool.com/holberton-logo.png){width='100px'}
