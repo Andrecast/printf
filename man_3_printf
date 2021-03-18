@@ -20,6 +20,8 @@ Print the ASCII character
 Print an text string. A pointer to the char array is expected to print all the characters of that array without including the null byte.
 .B "%d" and "%i"
 If you pass int arguments, it converts them to signed decimals.
+.B "%%"
+Print a percent sign only.
 
 .SH EXAMPLE
 int main(void)
@@ -35,7 +37,7 @@ int main(void)
 
 .SH RETURN VALUE
 If the successful, returns the number of characters printed (not counting the null byte).
-If not, it returns (-1).
+If not, it returns (-1) (also applies in the case of passing in format only a '%').
 If the string is NULL, prints (null), as in the original \fBprintf\fR function.
 
 .SH SEE ALSO
