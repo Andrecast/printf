@@ -2,7 +2,7 @@
 -   Foundations - printf
 -   By Diana Parra and Andrea Castrillón
 
-## Overview
+## Overview :dart:
 Using the _printf function we can write data to the standard output device (screen), you can write any combination of numeric values, single characters and character strings. The printf function transports data from memory to the screen.
 
 ### Prototype of _printf function
@@ -10,7 +10,7 @@ Using the _printf function we can write data to the standard output device (scre
 `int _printf(const char *format, ...);`  
 Returns: the number of characters printed (excluding the null byte used to end output to strings)
 
-## Tasks
+## Tasks :bulb:
 
 ### Task 0
 
@@ -39,7 +39,7 @@ is about being able to print the the char % because being the indefinifier of pr
 
 ### Example Usage
 
--   `_printf("%%")`  _prints the character  `%`
+-   `_printf("%%")`  _prints the character  `%`_
 
 ### Task 1
 
@@ -61,28 +61,34 @@ With this option it is able to print the integers that can be handled in the var
 
 ### Example Usage
 
--   `_printf("%i", 630)`  _prints 630
+-   `_printf("%i", 630)`  _prints 630_
 
 ## Task 2
 
--Manual file - man_3_printf
+* Manual file - [man_3_printf](https://github.com/Andrecast/printf/blob/00613597e4e52ebc337a6a772fe00f81c657f6de/man_3_printf)
 
-## Flowcharts
+## Flowcharts :pencil2:
 
-- Printf flowchart
+* _printf.c and helper_printf.c 
+
 https://drive.google.com/file/d/1hTc2UefJ6vC0fjqGmLy5DBt1ys1bKdiA/view?usp=sharing
--funcschar
+
+* funcschar.c
+
 https://drive.google.com/file/d/1a0O1rJuDjXpFQs3lKesEp8lk4nJzg4FJ/view?usp=sharing
--funcsint
+
+* funcsint.c
+
 https://drive.google.com/file/d/1MARtvRm8bNFNrIgj7DJ-N1e0BPyfDlqK/view?usp=sharing
 
-### About
+### About :pushpin:
 
 Created on  `Ubuntu 14.04 LTS`. Compiled with  `gcc 4.8.4`, using flags:  `-Wall -Werror -Wextra and -pedantic`
 
 ### Authors :blossom:
-Andrea Castrillón [GitHub_Andrecast](https://github.com/Andrecast)
-Diana Parra [GitHub_dianaparr](https://github.com/dianaparr)
+[GitHub_Andrecast](https://github.com/Andrecast) and
+[GitHub_dianaparr](https://github.com/dianaparr)
 
 **Project to:**
-![](https://www.holbertonschool.com/holberton-logo.png){width='100px'}
+![](https://www.holbertonschool.com/holberton-logo.png)
+
